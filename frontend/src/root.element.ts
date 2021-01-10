@@ -9,6 +9,7 @@ import { Match } from 'navigo';
 import { NavigationService } from './services/navigation.service';
 
 import './pages/home.element';
+import { globalStyle } from './styles/global';
 
 @customElement('app-root')
 export class RootElement extends LitElement {
@@ -30,14 +31,17 @@ export class RootElement extends LitElement {
       .resolve();
   }
 
-  static styles = css`
-    :host {
-      display: block;
-      height: 100vh;
-      width: 100vw;
-      background-color: #fafafa;
-    }
-  `;
+  static styles = [
+    globalStyle,
+    css`
+      :host {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        background-color: #fafafa;
+      }
+    `
+  ];
 
   render() {
     return html`${this.outlet}`;
