@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: './src/root-element.ts',
   module: {
     rules: [
       {
@@ -13,7 +13,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.ts']
+    extensions: ['.ts', '.js']
   },
   plugins: [
     new HtmlWebpackPlugin({
