@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "lit-element": "^2.4.0"
+    "lit-element": "^2.4.0",
+    "navigo": "^8.3.2"
   },
   "devDependencies": {
     "html-webpack-plugin": "^4.5.1",
