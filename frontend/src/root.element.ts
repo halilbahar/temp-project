@@ -5,8 +5,10 @@ import {
   LitElement,
   TemplateResult
 } from 'lit-element';
-import { NavigationService } from './services/navigation.service';
 import { Match } from 'navigo';
+import { NavigationService } from './services/navigation.service';
+
+import './pages/home.element';
 
 @customElement('app-root')
 export class RootElement extends LitElement {
