@@ -2,7 +2,11 @@
   "compilerOptions": {
     "target": "es2017",
     "module": "es2015",
-    "lib": ["es2017", "dom", "dom.iterable"],
+    "lib": [
+      "es2017",
+      "dom",
+      "dom.iterable"
+    ],
     "declaration": false,
     "sourceMap": true,
     "outDir": "./dist",
@@ -23,6 +27,8 @@
       }
     ]
   },
-  "include": ["src/**/*.ts"],
+  "include": [
+    "src/**/*.ts"
+  ],
   "exclude": []
 }
