@@ -10,7 +10,7 @@ module.exports = merge(common, {
     port: 6969,
     compress: false,
     historyApiFallback: {
-      index: 'index.html'
+      index: '/'
     }
   }
 });
